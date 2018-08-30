@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title</title>
+
+        @Styles.Render("~/Content/Site.css")
+        @Styles.Render("~/Content/justified-nav.css")
+        @Scripts.Render("~/bundles/modernizr")
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("PÁGINA INICIAL", "Index", "Home")</li>
+                    <li>@Html.ActionLink("SOBRE", "Sobre", "Home")</li>
+                    <li>@Html.ActionLink("CONTATO", "Contato", "Home")</li>
+                    <li>@Html.ActionLink("TAREFAS", "Index", "Tarefas")</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p><b>&copy; @DateTime.Now.Year - TaskList</b></p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
