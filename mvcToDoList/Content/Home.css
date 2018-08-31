@@ -2,6 +2,12 @@
     font-weight: bold;
 }
 
+/*Deixa o link do gitHub a direita na tela*/
 .git {
     float:right;
+}
+
+/*Ao passar com o mouse no link "Clique aqui para começar!" ele se mexe*/
+.expandir:hover{
+    padding: 6px;
 }

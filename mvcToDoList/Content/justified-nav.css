@@ -2987,7 +2987,8 @@ select[multiple].form-group-lg .form-control {
 .btn {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: bold;
+  font-family: Arial;
   text-align: center;
   vertical-align: middle;
   -ms-touch-action: manipulation;
@@ -3042,6 +3043,7 @@ fieldset[disabled] .btn {
   color: #333333;
   background-color: #e7e7e7;
   border-color: #cccccc;
+  font-family: Arial;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3049,9 +3051,11 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333333;
-  background-color: #cecece;
+  color: white;
+  background-color: dodgerblue;
   border-color: #adadad;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .btn-default:active,
 .btn-default.active,

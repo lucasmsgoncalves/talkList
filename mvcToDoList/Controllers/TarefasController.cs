@@ -14,13 +14,13 @@ namespace TaskList.Controllers
     {
         private TodosDBContext db = new TodosDBContext();
 
-        // GET: Tarefas
+        // GET: Tarefa
         public ActionResult Index()
         {
             return View(db.Todo.ToList());
         }
 
-        // GET: Todos/Detalhes
+        // GET: Tarefa/Detalhes
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,15 +35,13 @@ namespace TaskList.Controllers
             return View(tarefas);
         }
 
-        // GET: Todos/Inserir
+        // GET: Tarefa/Inserir
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Tarefas/Inserir
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Tarefa/Inserir
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Name,Data,Meta,Status")] Tarefas tarefas)
@@ -58,7 +56,7 @@ namespace TaskList.Controllers
             return View(tarefas);
         }
 
-        // GET: Todos/Editar
+        // GET: Tarefa/Editar
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -74,8 +72,6 @@ namespace TaskList.Controllers
         }
 
         // POST: Tarefas/Editar
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Name,Data,Meta,Status")] Tarefas tarefas)
@@ -89,7 +85,7 @@ namespace TaskList.Controllers
             return View(tarefas);
         }
 
-        // GET: Todos/Excluir
+        // GET: Tarefa/Excluir
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +100,7 @@ namespace TaskList.Controllers
             return View(tarefas);
         }
 
-        // POST: Todos/Delete
+        // POST: Tarefa/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
