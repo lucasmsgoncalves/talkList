@@ -7,14 +7,14 @@
         'Lucida Sans Unicode', 
         Geneva, Verdana, 
         sans-serif;
-    background-image: url('Images/fundo.jpg');
+   /*background-image: url('Images/fundo.jpg');*/
 }
 
 /* Impedir que o conteúdo atinja as bordas */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 2%;
+    margin-top:2%;
 }
 
 /*
@@ -30,5 +30,11 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.menu{
+    padding: 10px !important;
+    font-size: 15px !important;
+    font-family: Arial !important;
 }
 
