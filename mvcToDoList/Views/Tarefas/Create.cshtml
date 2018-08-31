@@ -4,7 +4,7 @@
     ViewBag.Title = "Criar Tarefa";
 }
 
-<h2>ADICIONAR</h2>
+<h2><b>ADICIONAR</b></h2>
 
 
 @using (Html.BeginForm()) 
@@ -66,7 +66,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <button type="submit" class="btn btn-outline-success">SALVAR</button>
+                <input type="submit" value="SALVAR" class="btn btn-default"/>
             </div>
         </div>
     </div>
@@ -76,6 +76,11 @@
     @Html.ActionLink("Voltar", "Index")
 </div>
 
+<style>
+    body{
+        
+    }
+</style>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

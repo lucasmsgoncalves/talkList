@@ -1099,12 +1099,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #008cba;
+  color: dodgerblue;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #00526e;
+  color: dodgerblue;
   text-decoration: underline;
 }
 a:focus {
@@ -3085,8 +3085,9 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #008cba;
-  border-color: #0079a1;
+  background-color: black !important;
+  border-color: black !important;
+  font-family: Arial;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3095,7 +3096,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #006687;
+  background-color: dodgerblue !important;
   border-color: #004b63;
 }
 .btn-primary:active,
@@ -4178,6 +4179,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 19px;
   line-height: 21px;
   height: 45px;
+
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4394,7 +4396,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #333333;
+  background-color: dodgerblue !important;
   border-color: #222222;
 }
 .navbar-default .navbar-brand {
